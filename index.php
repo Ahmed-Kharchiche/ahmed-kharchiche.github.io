@@ -54,7 +54,8 @@ $heure = date("H:i");
 
             <p>Bienvenue sur mon site PHP.</p>
 
-            <p>Il est actuellement <?php echo $heure; ?>.</p>
+            <p>Il est actuellement <?php echo $heure; ?>.
+        PHP</p>
         </div>
     </div>
 
