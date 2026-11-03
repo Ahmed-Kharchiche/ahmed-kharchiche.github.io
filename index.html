@@ -4,108 +4,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Kharchiche - Accueil</title>
+    <meta name="description" content="Ahmed Kharchiche, étudiant en BUT Informatique, passionné par le développement logiciel et l'intelligence artificielle.">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        h2 {
-            color: #2c3e50;
-        }
-
-        a {
-            color: #2563eb;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #777;
-            font-size: 14px;
-        }
-    </style>
+    <title>Ahmed Kharchiche — Développeur</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Ahmed Kharchiche</h1>
-        <p>Étudiant en BUT Informatique</p>
+        <nav class="container">
+            <a href="#" class="logo">AK<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#apropos">À propos</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>À propos de moi</h2>
-            <p>
-                Bonjour, je m'appelle Ahmed et je suis étudiant
-                en deuxième année de BUT Informatique à l'IUT de Valence.
+    <main class="container">
+
+        <!-- Accueil -->
+        <div class="hero">
+            <span class="eyebrow">Développeur / Portfolio</span>
+
+            <h1>
+                Ahmed<br>
+                Kharchiche<span>.</span>
+            </h1>
+
+            <p class="hero-description">
+                Des idées simples, du code bien pensé.
             </p>
-            <p>
-                Je m'intéresse particulièrement au développement
-                logiciel et à l'intelligence artificielle.
-            </p>
+
+            <div class="actions">
+                <a href="https://ahmed-kharchiche.com/"
+                   class="button"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Découvrir mon portfolio ↗
+                </a>
+
+                <a href="#contact" class="text-link">
+                    Contact ↗
+                </a>
+            </div>
+        </div>
+
+        <!-- À propos -->
+        <section id="apropos">
+            <div class="section-grid">
+                <div>
+                    <span class="eyebrow">01 / Présentation</span>
+                    <h2>À propos de moi</h2>
+                </div>
+
+                <div>
+                    <p class="about-text">
+                        Je suis étudiant en deuxième année de
+                        BUT Informatique à l'IUT de Valence.
+                        Je m'intéresse particulièrement au
+                        développement logiciel et à
+                        l'intelligence artificielle.
+                        J'aime concevoir des applications,
+                        résoudre des problèmes et découvrir
+                        de nouvelles technologies.
+                    </p>
+
+                    <div class="skills">
+                        <span class="skill">Python</span>
+                        <span class="skill">Java</span>
+                        <span class="skill">C</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">PHP</span>
+                        <span class="skill">SQL</span>
+                        <span class="skill">HTML / CSS</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Mes compétences</h2>
-            <p>
-                Langages : Python, Java, C, JavaScript,
-                PHP, HTML, CSS et SQL.
-            </p>
+        <!-- Projets -->
+        <section id="projets">
+            <div class="section-grid">
+                <div>
+                    <span class="eyebrow">02 / Réalisations</span>
+                    <h2>Quelques projets</h2>
+                </div>
+
+                <div>
+                    <div class="project">
+                        <div>
+                            <h3>Réservation hôtelière</h3>
+                            <p>
+                                Application JavaFX avec
+                                base de données SQLite.
+                            </p>
+                        </div>
+
+                        <a href="https://ahmed-kharchiche.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Portfolio ↗
+                        </a>
+                    </div>
+
+                    <div class="project">
+                        <div>
+                            <h3>Intelligence artificielle</h3>
+                            <p>
+                                Classification d'émotions
+                                avec Python et scikit-learn.
+                            </p>
+                        </div>
+
+                        <a href="https://ahmed-kharchiche.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Portfolio ↗
+                        </a>
+                    </div>
+
+                    <div class="project">
+                        <div>
+                            <h3>Portfolio personnel</h3>
+                            <p>
+                                Développement web et
+                                expériences interactives.
+                            </p>
+                        </div>
+
+                        <a href="https://ahmed-kharchiche.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Visiter ↗
+                        </a>
+                    </div>
+
+                    <div class="all-projects">
+                        <a href="https://ahmed-kharchiche.com/"
+                           class="button"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Voir tous mes projets ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Mon portfolio</h2>
-            <p>
-                Vous pouvez retrouver mes projets et mes réalisations
-                sur mon portfolio personnel.
-            </p>
-            <a href="https://ahmed-kharchiche.com" target="_blank"
-               rel="noopener noreferrer">
-                Voir mon portfolio
-            </a>
+        <!-- Contact -->
+        <section id="contact">
+            <div class="section-grid">
+                <div>
+                    <span class="eyebrow">03 / Contact</span>
+                    <h2>Restons en contact.</h2>
+                </div>
+
+                <div>
+                    <p class="contact-text">
+                        Vous souhaitez découvrir davantage
+                        mon travail ou échanger avec moi ?
+                        Retrouvez mes projets et mes
+                        informations sur mon portfolio.
+                    </p>
+
+                    <div class="actions">
+                        <a href="https://ahmed-kharchiche.com/"
+                           class="button"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Mon portfolio ↗
+                        </a>
+
+                        <a href="https://github.com/Ahmed-Kharchiche"
+                           class="text-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Contact</h2>
-            <p>
-                Retrouvez mes projets sur
-                <a href="https://github.com/Ahmed-Kharchiche"
-                   target="_blank" rel="noopener noreferrer">
-                    mon profil GitHub
-                </a>.
-            </p>
-        </section>
     </main>
 
     <footer>
-        © 2026 Ahmed Kharchiche
+        <div class="container footer-content">
+            <span>© 2026 Ahmed Kharchiche</span>
+            <span>Développé en HTML & CSS</span>
+        </div>
     </footer>
 
 </body>
