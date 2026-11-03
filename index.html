@@ -1,14 +1,4 @@
 
-<?php
-$nom = "Ahmed Kharchiche";
-$formation = "BUT Informatique - 2e année";
-$specialite = "Développement logiciel & Intelligence artificielle";
-$heure = date("H:i");
-
-// Remplace par l'URL réelle de ton portfolio
-$portfolio = "https://ton-portfolio.fr";
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,7 +7,9 @@ $portfolio = "https://ton-portfolio.fr";
     <title>Ahmed Kharchiche | Développeur</title>
 
     <style>
-        * { box-sizing: border-box; }
+        * {
+            box-sizing: border-box;
+        }
 
         body {
             margin: 0;
@@ -39,11 +31,13 @@ $portfolio = "https://ton-portfolio.fr";
             padding: 45px;
             background: #1f2937;
             border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
             max-width: 550px;
         }
 
-        h1 { color: #60a5fa; }
+        h1 {
+            color: #60a5fa;
+        }
 
         p {
             color: #d1d5db;
@@ -68,17 +62,23 @@ $portfolio = "https://ton-portfolio.fr";
         }
     </style>
 </head>
+
 <body>
     <main class="container">
         <div class="box">
-            <h1>🚀 Bonjour, je suis <?= htmlspecialchars($nom) ?> !</h1>
+            <h1>🚀 Bonjour, je suis Ahmed Kharchiche !</h1>
 
-            <p>🎓 <?= htmlspecialchars($formation) ?> à l'IUT de Valence</p>
-            <p>💻 <?= htmlspecialchars($specialite) ?></p>
-            <p>🕒 Heure actuelle : <?= $heure ?></p>
+            <p>🎓 Étudiant en 2e année de BUT Informatique
+                à l'IUT de Valence</p>
+
+            <p>💻 Passionné par le développement logiciel
+                et l'intelligence artificielle.</p>
+
+            <p>🚀 Découvrez mes projets et mes compétences
+                sur mon portfolio.</p>
 
             <a class="btn"
-               href="<?= htmlspecialchars($portfolio, ENT_QUOTES) ?>"
+               href="https://ton-portfolio.fr"
                target="_blank"
                rel="noopener noreferrer">
                 Découvrir mon portfolio →
