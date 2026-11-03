@@ -1,0 +1,89 @@
+
+<?php
+$nom = "Ahmed Kharchiche";
+$formation = "BUT Informatique - 2e année";
+$specialite = "Développement logiciel & Intelligence artificielle";
+$heure = date("H:i");
+
+// Remplace par l'URL réelle de ton portfolio
+$portfolio = "https://ton-portfolio.fr";
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Kharchiche | Développeur</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111827;
+            color: white;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .box {
+            text-align: center;
+            padding: 45px;
+            background: #1f2937;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            max-width: 550px;
+        }
+
+        h1 { color: #60a5fa; }
+
+        p {
+            color: #d1d5db;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="box">
+            <h1>🚀 Bonjour, je suis <?= htmlspecialchars($nom) ?> !</h1>
+
+            <p>🎓 <?= htmlspecialchars($formation) ?> à l'IUT de Valence</p>
+            <p>💻 <?= htmlspecialchars($specialite) ?></p>
+            <p>🕒 Heure actuelle : <?= $heure ?></p>
+
+            <a class="btn"
+               href="<?= htmlspecialchars($portfolio, ENT_QUOTES) ?>"
+               target="_blank"
+               rel="noopener noreferrer">
+                Découvrir mon portfolio →
+            </a>
+        </div>
+    </main>
+</body>
+</html>
